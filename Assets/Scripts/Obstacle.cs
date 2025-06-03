@@ -1,25 +1,27 @@
-﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Obstacle : MonoBehaviour {
+public class Obstacle : MonoBehaviour
+{
+    /*************
+     * VARIABLES *
+     *************/
 
-    public float speed;
-    public GameObject effect;
 
-	void Update () 
+    /*****************************
+     * THIS METHOD RUNS ON EVERY *
+     * FRAME OF THE GAME(FPS)    *
+     ****************************/
+    private void Update()
     {
-        transform.Translate(Vector2.left * speed * Time.deltaTime);
-	}
+    
+    }
 
+    /************************************
+     * THIS METHOD RUNS WHENEVER AN     *
+     * OBJECT COLLIDES WITH THIS OBJECT *
+     ************************************/
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player")) 
-        {
-            other.GetComponent<Player>().health--;
-            other.GetComponent<Player>().camAnim.SetTrigger("shake");
-            Instantiate(effect, transform.position, Quaternion.identity);
-            Destroy(gameObject);
-        }   
+    
     }
 }
