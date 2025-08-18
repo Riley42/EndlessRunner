@@ -5,7 +5,8 @@ public class Obstacle : MonoBehaviour
     /*************
      * VARIABLES *
      *************/
-
+    public float Speed;
+    public GameObject ExplosionFX;
 
     /*****************************
      * THIS METHOD RUNS ON EVERY *
@@ -13,7 +14,7 @@ public class Obstacle : MonoBehaviour
      ****************************/
     private void Update()
     {
-    
+        transform.Translate(Speed * Time.deltaTime * Vector2.left);
     }
 
     /************************************
@@ -22,6 +23,7 @@ public class Obstacle : MonoBehaviour
      ************************************/
     private void OnTriggerEnter2D(Collider2D other)
     {
-    
+        Instantiate(ExplosionFX, transform.position, Quaternion.identity);
+        Destroy(this.gameObject);
     }
 }
