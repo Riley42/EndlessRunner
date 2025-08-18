@@ -6,6 +6,8 @@ public class ScoreManager : MonoBehaviour
     /*************
      * VARIABLES *
      *************/
+    public int Score;
+    public TextMeshProUGUI ScoreText;
 
     /************************************
     * THIS METHOD RUNS WHENEVER AN     *
@@ -13,6 +15,7 @@ public class ScoreManager : MonoBehaviour
     ************************************/
     private void OnTriggerEnter2D(Collider2D other)
     {
-
+        Score++;
+        ScoreText.text = "Score: " + Score;
     }
 }

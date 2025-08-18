@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
+    /***************************
+     * DO NOT CHANGE THIS CODE *
+     ***************************/
     [SerializeField] float timeBetweenSpawns;
     [SerializeField] GameObject[] spawnTemplates;
     float spawnTimer;
