@@ -3,16 +3,10 @@ using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
-    /*************
-     * VARIABLES *
-     *************/
+    public static ScoreManager Instance;
 
-    /************************************
-    * THIS METHOD RUNS WHENEVER AN     *
-    * OBJECT COLLIDES WITH THIS OBJECT *
-    ************************************/
-    private void OnTriggerEnter2D(Collider2D other)
+    public void Awake()
     {
-
+        Instance = this;
     }
 }
