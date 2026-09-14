@@ -1,9 +1,9 @@
 using TMPro;
 using UnityEngine;
 
-public class ScoreManager : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
-    public static ScoreManager Instance;
+    public static GameManager Instance;
 
     public void Awake()
     {
