@@ -1,9 +1,9 @@
 using TMPro;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class AudioManager : MonoBehaviour
 {
-    public static GameManager Instance;
+    public static AudioManager Instance;
 
     public void Awake()
     {
