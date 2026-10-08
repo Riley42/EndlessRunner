@@ -262,8 +262,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19fa7b9557a4879489bc6377f033ef63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Spawn
-  timeBetweenSpawns: 0
-  obstaclePods: []
+  timeBetweenSpawns: 2
+  obstaclePods:
+  - {fileID: 5404209711823908856, guid: 4a3f82d6c7c7cb6419b30cb777d1820d, type: 3}
+  - {fileID: 3455473807668988595, guid: 5b84517dacd78c9449e22577136d591c, type: 3}
+  - {fileID: 2003506377659967026, guid: 1324f8067cbc2d541be51c3885b89278, type: 3}
 --- !u!114 &75562202
 MonoBehaviour:
   m_ObjectHideFlags: 0
